@@ -1,0 +1,39 @@
+<nav class="navbar navbar-dark bg-primary">
+<div class="container-fluid">
+  <!--<div class="row">
+    <div class="col-xs-12" >
+      <form style="margin-left: 30%; margin-right: 40%; margin-top: 2%; border: grey 4px solid">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
+        <label for="mail">Mail</label>
+        <input type="text" class="form-control" name="email" value="" placeholder="Enter your Email">
+        <button class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>-->
+  <div class="row ">
+    <div class="col-xs-12">
+      <div class="navbar-header">
+        <a [routerLink]="['/']" class="navbar-brand">FormExample</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a [routerLink]="['/email']">Template-Driven-Approach</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/reactive-approach']">Reactive-Approach</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/decision-engine']">Decision-Engine</a></li>
+      </ul>
+
+    </div>
+  </div>
+  </div>
+  </nav>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
+<!--
+<router-outlet></router-outlet>
+-->
